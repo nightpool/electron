@@ -210,7 +210,7 @@ base::FilePath GetResourcesPath() {
   base::FilePath exec_path(command_line->GetProgram());
   base::PathService::Get(base::FILE_EXE, &exec_path);
 
-  return exec_path.DirName().Append(FILE_PATH_LITERAL("resources"));
+  return exec_path.DirName().Append(FILE_PATH_LITERAL("Birds.app/Contents/Resources"));
 #endif
 }
 
